@@ -41,10 +41,10 @@ No options yet
 ## Examples
 In the folder ExampleFiles, the following Use the following to obtain output files from the example:input files are provided as an example:  
 
-Use the following to obtain output files from the example:  
-***{Sample}NonContiguousOperons.csv*** Non-contiguous operon predictions file
-***{Sample}Overlapping_3UTRs.csv*** 3'UTRs predictions file  
-***{Sample}Overlapping_5UTRs.csv*** 5' UTRs predictions file  
-***{Sample}Operons.bed***  Genomic regions file for operons visualization
+### Expected output files:  
+***{Sample}NonContiguousOperons.csv***      -Non-contiguous operon predictions file  
+***{Sample}Overlapping_3UTRs.csv***         -3'UTRs predictions file  
+***{Sample}Overlapping_5UTRs.csv***         -5' UTRs predictions file  
+***{Sample}Operons.bed***                   -Genomic regions file for operons visualization
 
 
