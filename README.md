@@ -12,12 +12,12 @@ conda env create -f environment.yml
 conda activate env_name  
 ```
 ## Alignment and depth covergare annotation 
-The script ... is used to:  
+The script ```Scripts/Alligment_and_UTRs_annotation.sh ``` is used to:  
 Align reads to references using minimap2  
 Sort and index BAMs and determine the total coverage at each genomic position using Samtools
 
 ## Overview of the steps performed for operon identification:
-Identifying overlapping UTRs and non-contiguous operon with the script ...    
+Identifying overlapping UTRs and non-contiguous operon with the script ```Scripts/identify_Overlapping_reads_paralelized.R ```
   1. Determine start and stop points for the alignment for each read
   2. Count of mapped reads
   3. Filter reads with more than 80% alignment identity to the reference  and overlapping CDS, tRNA, or tmRNA genes
@@ -31,6 +31,20 @@ Identifying overlapping UTRs and non-contiguous operon with the script ...
   ## UTRs annotation:
   Count of 3'UTRs and 5' UTRs in the genome regardless of whether they form an operon or not
 
+## Usage
+usage: bash Alligment_and_UTRs_annotation.sh <target.fa>|<query.fa>|<annotation.gff>  
 
+optional arguments:  
+
+No options yet
+
+## Examples
+In the folder ExampleFiles, the following Use the following to obtain output files from the example:input files are provided as an example:  
+
+Use the following to obtain output files from the example:  
+***{Sample}NonContiguousOperons.csv*** Non-contiguous operon predictions file
+***{Sample}Overlapping_3UTRs.csv*** 3'UTRs predictions file  
+***{Sample}Overlapping_5UTRs.csv*** 5' UTRs predictions file  
+***{Sample}Operons.bed***  Genomic regions file for operons visualization
 
 
