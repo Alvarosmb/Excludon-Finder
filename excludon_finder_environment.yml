@@ -1,0 +1,10 @@
+name: excludon_finder
+channels:
+  - conda-forge
+  - defaults
+  - bioconda
+dependencies:
+  - r-base
+  - minimap2
+  - samtools
+prefix: /home/alvaro/miniconda3/bin/envs/excludon
