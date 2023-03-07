@@ -22,10 +22,11 @@ Identifying overlapping UTRs and non-contiguous operon with the script ```Script
   2. Count of mapped reads
   3. Filter reads with more than 80% alignment identity to the reference  and overlapping CDS, tRNA, or tmRNA genes
   4. Overlapping reads (on the same strand) were combined into ranges representing putative operons
-  5. Operon identification: 
-    - Iteratioin through each gene of the putative operon taking the median coverage of 20 nt upstream of the TTS of the gene. 
-    - Divide this median coverage by a split ratio of 20. Check if, for each nt of the intergenic region to the next gene, the coverage is less than this ratio. 
-    - If 3 consecutive nt have less coverage thant thse ratio, the operon is splitted.
+  5. Operon identification:   
+    - Iteratioin through each gene of the putative operon taking the median coverage of 20 nt upstream of the TTS of the gene  
+    - Divide this median coverage by a split ratio of 20.  
+    - Check if, for each nt of the intergenic region to the next gene, the coverage is less than this ratio.   
+    - If 3 consecutive nt have less coverage thant thse ratio, the operon is splitted.  
   6. Operons were labeled as non-contiguous if an operon on the opposite strand was flanked on both sides by genes in the operon in question.
   7. Count of reads that overlapp genes flinking the reverse gene(s) of the operon.
   ## UTRs annotation:
