@@ -1,5 +1,5 @@
 # Excludon-Finder
-Easy to use pipeline for overlapping UTRs and Non-contiguous operons annnotation using Oxford Nanopore direct RNA sequencing.
+Easy to use pipeline for annnotation of overlapping UTRs and Non-contiguous operons  using Oxford Nanopore direct RNA sequencing.
 
 This project's code is adapted from Lindsay Clark's (https://github.com/lvclark) repository, (https://github.com/HPCBio/lasa-ONT-2022June), with modifications made to create a more efficient and versatile pipeline that only requires input and utilizes a conda environment for ease of use.
 
