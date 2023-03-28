@@ -16,8 +16,17 @@ The script ```Scripts/ExcludonFinder ``` is used to:
 Align reads to references using minimap2  
 Sort and index BAMs and determine the total coverage at each genomic position using Samtools
 
+ ## Excludon annotation:
+Identification of  overlapping 3' UTRs and 5' UTRs in the genome regardless of whether they form an operon or not with the script ```Scripts/Overlapping_reads.R ```.
+ * Identify convergent and divergent pairs of genes in the genome
+ * Calculate median read end and start for these genes
+ * For divergent genes, median read start of the pair of genes must overlap
+ * For convergent genes, median read end of the pair of genes must overlap  
+ 
+Overlapping length must be at least of 20 nt
+ 
+
 ## Overview of the steps performed for Non-contiguous operon identification:
-Identifying overlapping UTRs and non-contiguous operon with the script ```Scripts/Overlapping_reads.R ```
   * Determine start and stop points for the alignment for each read
   *  Count of mapped reads
   * Filter reads with more than 80% alignment identity to the reference  and overlapping CDS, tRNA, or tmRNA genes
@@ -29,18 +38,7 @@ Identifying overlapping UTRs and non-contiguous operon with the script ```Script
     - If 3 consecutive nt have less coverage thant this ratio, the operon is splitted.  
   * Operons were labeled as non-contiguous if al least one gene on the opposite strand was flanked on both sides by genes in the operon in question.
   * Count of reads that overlapp genes flinking the reverse gene(s) of the operon.
-  ## Excludon annotation:
  
- Different algorithim was used to identify overlapping 3' UTRs and 5' UTRs in the genome regardless of whether they form an operon or not.
- * Identify convergent and divergent pairs of genes in the genome
- * Calculate median read end and start for these genes
- * For divergent genes, median read start of the pair of genes must overlap
- * For convergent genes, median read end of the pair of genes must overlap  
- 
-Overlapping length must be at least of 20 nt
- 
-
-
 
 ## Usage
 ```
