@@ -30,7 +30,7 @@ Identifying overlapping UTRs and non-contiguous operon with the script ```Script
   * Operons were labeled as non-contiguous if al least one gene on the opposite strand was flanked on both sides by genes in the operon in question.
   * Count of reads that overlapp genes flinking the reverse gene(s) of the operon.
   ## Excludon annotation:
-  Count of overlapping 3'UTRs and 5' UTRs in the genome regardless of whether they form an operon or not. Median read ends must overlapp at least 20 nt of the neighbor gene.
+  Count of overlapping 3' UTRs and 5' UTRs in the genome regardless of whether they form an operon or not. Median read ends must overlapp at least 20 nt of the neighbor gene.
 
 
 ## Usage
@@ -41,7 +41,7 @@ Excludon_finder -f <fasta_input> -q <fastq_input> -g <gff_input> [-m mode] [-r s
  * ```-f --fasta FASTA FILE ```
     * Reference genome 
  * ```-q --fastq FASTQ FILE ```
-    * Sequence data
+    * Sequencing data
  * ```-g --gff GFF FILE ```
     * Annotation file 
  * ```-m --mode MODE OPTION ```
@@ -50,12 +50,11 @@ Excludon_finder -f <fasta_input> -q <fastq_input> -g <gff_input> [-m mode] [-r s
       * Asses the value of split ratio (OPTIONAL). Default value: 10
 
 ## Examples
-In the folder ExampleFiles, the following Use the following to obtain output files from the example:input files are provided as an example:  
-
-### Expected output files:  
+In the folder ExampleFiles, input files from _Autographa Californica nucleopolyhedrovirus_ (ACMNPV), from Baculoviridae family, are provided. This organism was chosen as an exemplar due to its relatively small genome size and therefore, the low computational complexity required for annotating non-contiguous operons. SPLIT RATIO [-r option ] must be set at 25 to detect a non-contiguous operon
+#### Expected output files:  
 ***{Sample}NonContiguousOperons.csv***      -Non-contiguous operon predictions file  
 ***{Sample}Overlapping_3UTRs.csv***         -3'UTRs predictions file  
 ***{Sample}Overlapping_5UTRs.csv***         -5' UTRs predictions file  
-***{Sample}Operons.bed***                   -Genomic regions file for operons visualization
+
 
 
