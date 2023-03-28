@@ -6,8 +6,8 @@ This project's code is adapted from Lindsay Clark's (https://github.com/lvclark)
 ## Getting started
 ### Installing conda enviroment
 ```
-git clone https://github.com/username/repo.git  
-cd repo  
+git clone https://github.com/Alvarosmb/Operon-Finder.git
+cd Operon-Finder 
 conda env create -f environment.yml  
 conda activate env_name  
 ```
