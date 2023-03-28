@@ -30,7 +30,16 @@ Identifying overlapping UTRs and non-contiguous operon with the script ```Script
   * Operons were labeled as non-contiguous if al least one gene on the opposite strand was flanked on both sides by genes in the operon in question.
   * Count of reads that overlapp genes flinking the reverse gene(s) of the operon.
   ## Excludon annotation:
-  Count of overlapping 3' UTRs and 5' UTRs in the genome regardless of whether they form an operon or not. Median read ends must overlapp at least 20 nt of the neighbor gene.
+ 
+ Different algorithim was used to identify overlapping 3' UTRs and 5' UTRs in the genome regardless of whether they form an operon or not.
+ * Identify convergent and divergent pairs of genes in the genome
+ * Calculate median read end and start for these genes
+ * For divergent genes, median read start of the pair of genes must overlap
+ * For convergent genes, median read end of the pair of genes must overlap  
+ 
+Overlapping length must be at least of 20 nt
+ 
+
 
 
 ## Usage
