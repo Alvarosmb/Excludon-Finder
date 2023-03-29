@@ -8,8 +8,8 @@ This project's code is adapted from Lindsay Clark's (https://github.com/lvclark)
 ```
 git clone https://github.com/Alvarosmb/Excludon-Finder.git
 cd Operon-Finder 
-conda env create -f environment.yml  
-conda activate env_name  
+conda env create -f excludon_finder_environment.yml 
+conda activate excludon_finder
 ```
 ## Alignment and depth covergare annotation 
 The script ```Scripts/ExcludonFinder ``` is used to:  
