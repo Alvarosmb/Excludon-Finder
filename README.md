@@ -42,14 +42,14 @@ Overlapping length must be at least of 20 nt
 
 ## Usage
 ```
-Excludon_finder -f <fasta_input> -q <fastq_input> -g <gff_input> [-m mode] [-r split ratio]
+Excludon_finder -f <path_to_fasta_input> -q <path_to_fastq_input> -g <path_to_gff_input> [-m mode] [-r split ratio]
 
 ```
- * ```-f --fasta FASTA FILE ```
+ * ```-f --fasta FASTA FILE PATH```
     * Reference genome 
- * ```-q --fastq FASTQ FILE ```
+ * ```-q --fastq FASTQ FILE PATH```
     * Sequencing data
- * ```-g --gff GFF FILE ```
+ * ```-g --gff GFF FILE PATH```
     * Annotation file 
  * ```-m --mode MODE OPTION ```
     * Specify if it is only desired to identify either Operons or Excludons (OPTIONAL). Options "Operon" or "Excludon". Both will be identifyied by default.
