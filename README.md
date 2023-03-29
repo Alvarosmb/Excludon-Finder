@@ -7,7 +7,7 @@ This project's code is adapted from Lindsay Clark's (https://github.com/lvclark)
 ### Installing conda enviroment
 ```
 git clone https://github.com/Alvarosmb/Excludon-Finder.git
-cd Operon-Finder 
+cd Excludon-Finder 
 conda env create -f excludon_finder_environment.yml 
 conda activate excludon_finder
 ```
