@@ -42,7 +42,7 @@ Overlapping length must be at least of 20 nt
 
 ## Usage
 ```
-bash Excludon_finder -f <path_to_fasta_input> -q <path_to_fastq_input> -g <path_to_gff_input> [-m mode] [-r split ratio]
+bash Excludon_finder.sh -f <path_to_fasta_input> -q <path_to_fastq_input> -g <path_to_gff_input> [-m mode] [-r split ratio]
 
 ```
  * ```-f --fasta FASTA FILE PATH```
