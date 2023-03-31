@@ -42,7 +42,7 @@ Overlapping length must be at least of 20 nt
 
 ## Usage
 ```
-Excludon_finder -f <path_to_fasta_input> -q <path_to_fastq_input> -g <path_to_gff_input> [-m mode] [-r split ratio]
+bash Excludon_finder -f <path_to_fasta_input> -q <path_to_fastq_input> -g <path_to_gff_input> [-m mode] [-r split ratio]
 
 ```
  * ```-f --fasta FASTA FILE PATH```
@@ -57,7 +57,7 @@ Excludon_finder -f <path_to_fasta_input> -q <path_to_fastq_input> -g <path_to_gf
       * Asses the value of split ratio (OPTIONAL). Default value: 10
 
 ## Examples
-In the folder ExampleFiles, input files from _Autographa Californica nucleopolyhedrovirus_ (ACMNPV), from Baculoviridae family, are provided. This organism was chosen as an exemplar due to its relatively small genome size and therefore, the low computational complexity required for annotating non-contiguous operons. SPLIT RATIO [-r option ] must be set at 20 to detect a non-contiguous operon
+In the folder ExampleFiles, input files from _Autographa Californica nucleopolyhedrovirus_ (AcMNPV), from Baculoviridae family, are provided. This organism was chosen as an exemplar due to its relatively small genome size and therefore, the low computational complexity required for annotating non-contiguous operons. SPLIT RATIO [-r option ] must be set at 20 to detect a non-contiguous operon
 #### Expected output files:  
 ***{Sample}NonContiguousOperons.csv***      -Non-contiguous operon predictions file  
 ***{Sample}Overlapping_3UTRs.csv***         -3'UTRs predictions file  
