@@ -54,7 +54,11 @@ bash Excludon_finder.sh -f <path_to_fasta_input> -q <path_to_fastq_input> -g <pa
  * ```-m --mode MODE OPTION ```
     * Specify if it is only desired to identify either Operons or Excludons (OPTIONAL). Options "Operon" or "Excludon". Both will be identifyied by default.
   * ```-r --split_ratio SPLIT RATIO ```
-      * Asses the value of split ratio (OPTIONAL). Default value: 10
+    * Asses the value of split ratio (OPTIONAL). Default value: 10
+  * ```-t --threads NUMBER OF THREADS ```
+     *  Number of additional threads to use. Default value: 8
+      
+   
 
 ## Examples
 In the folder ExampleFiles, input files from _Autographa Californica nucleopolyhedrovirus_ (AcMNPV), from Baculoviridae family, are provided. This organism was chosen as an exemplar due to its relatively small genome size and therefore, the low computational complexity required for annotating non-contiguous operons. SPLIT RATIO [-r option ] must be set at 20 to detect a non-contiguous operon
