@@ -1,3 +1,6 @@
+	![image](https://github.com/Alvarosmb/Excludon-Finder/assets/82378017/10456c52-e0e1-49d1-9ff5-512f8684afe7)
+
+
 # Excludon-Finder
 Easy to use pipeline for annnotation of overlapping UTRs and Non-contiguous operons  using Oxford Nanopore direct RNA sequencing.
 
